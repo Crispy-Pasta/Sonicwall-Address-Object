@@ -1,0 +1,58 @@
+address-object fqdn "Nestea Attack/DDOS" domain Google.com zone WAN
+domain "Google.com"
+exit
+address-object ipv4 "Blocked IP 1" host 192.229.211.108 zone WAN
+address-object ipv4 "Blocked IP 2" host 20.99.133.109 zone WAN
+address-object ipv4 "Blocked IP 3" host 20.99.184.37 zone WAN
+address-object ipv4 "Blocked IP 4" host 89.248.165.195 zone WAN
+address-object ipv4 "Blocked IP 6" host 45.134.144.212 zone WAN
+address-object ipv4 "Blocked IP 5" host 205.210.31.80 zone WAN
+address-object ipv4 "Blocked IP 7" host 89.248.163.19 zone WAN
+address-object ipv4 "Blocked IP 8" host 89.248.163.131 zone WAN
+address-object ipv4 "Blocked IP 9" host 89.248.163.95 zone WAN
+address-object ipv4 "Blocked IP 10" host 89.248.163.16 zone WAN
+address-object ipv4 "SR-759342 | Blocked IP 1" host 94.102.61.44 zone WAN
+address-object ipv4 "SR-759342 | Blocked IP 2" host 92.63.197.98 zone WAN
+address-object ipv4 "Blocked IP SR-830244" network 45.88.66.0 \255.255.255.0 zone WAN
+address-object ipv4 "Blocked IP SR-837440" host 45.93.20.88 zone WAN
+address-object ipv4 "Blocked IP 1 | SR-852295" host 205.210.31.237 zone WAN
+address-object ipv4 "Blocked IP 2 | SR-852295" host 162.142.125.83 zone WAN
+address-object ipv4 "Blocked IP 3 | SR-852295" host 185.94.111.1 zone WAN
+address-object ipv4 "Blocked IP 4 | SR-852295" host 198.235.24.9 zone WAN
+address-object ipv4 "Blocked IP 5 | SR-852295" host 212.70.149.138 zone WAN
+address-object ipv4 "Blocked IP 11" host 197.159.128.62 zone WAN
+address-object ipv4 "Blocked IP SR-1112405 1" host 136.158.8.74 zone WAN
+address-object ipv4 "Blocked IP SR-1112405 2" host 36.237.69.93 zone WAN
+address-object ipv4 "Blocked IP SR-1112405 3" host 51.223.78.70 zone WAN
+address-object ipv4 "Blocked IP SR-1112405 4" host 103.151.214.44 zone WAN
+address-object ipv4 "Blocked IP SR-1112405 5" host 116.131.154.154 zone WAN
+commit
+address-group ipv4 " All Network Attacks Group (1st batch)"
+address-object fqdn "Nestea Attack/DDOS"
+address-object ipv4 "Blocked IP 1"
+address-object ipv4 "Blocked IP 2"
+address-object ipv4 "Blocked IP 3"
+address-object ipv4 "Blocked IP 4"
+address-object ipv4 "Blocked IP 6"
+address-object ipv4 "Blocked IP 5"
+address-object ipv4 "Blocked IP 7"
+address-object ipv4 "Blocked IP 8"
+address-object ipv4 "Blocked IP 9"
+address-object ipv4 "Blocked IP 10"
+address-object ipv4 "SR-759342 | Blocked IP 1"
+address-object ipv4 "SR-759342 | Blocked IP 2"
+address-object ipv4 "Blocked IP SR-830244"
+address-object ipv4 "Blocked IP SR-837440"
+address-object ipv4 "Blocked IP 1 | SR-852295"
+address-object ipv4 "Blocked IP 2 | SR-852295"
+address-object ipv4 "Blocked IP 3 | SR-852295"
+address-object ipv4 "Blocked IP 4 | SR-852295"
+address-object ipv4 "Blocked IP 5 | SR-852295"
+address-object ipv4 "Blocked IP 11"
+address-object ipv4 "Blocked IP SR-1112405 1"
+address-object ipv4 "Blocked IP SR-1112405 2"
+address-object ipv4 "Blocked IP SR-1112405 3"
+address-object ipv4 "Blocked IP SR-1112405 4"
+address-object ipv4 "Blocked IP SR-1112405 5"
+exit
+commit
